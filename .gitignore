@@ -1,0 +1,8 @@
+# Ignore a pasta .vscode
+.vscode
+
+#I Ignore a pasta bin
+bin
+
+# Ignore a pasta obj
+obj
