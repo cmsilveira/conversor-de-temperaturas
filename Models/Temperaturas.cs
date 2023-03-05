@@ -6,6 +6,8 @@ namespace ConversorTemperaturas.Models
         public double fahrenheit = 0.0;
         public double kelvin = 0.0;
 
+        public Temperaturas() {}
+
         public void ConverterCelsius(double temperatura)
         {
             fahrenheit = (temperatura * 1.8000) + 32.00;
@@ -22,6 +24,12 @@ namespace ConversorTemperaturas.Models
         {
             celsius = temperatura - 273.15;
             fahrenheit = ((temperatura - 273.15) * 1.8000) + 273.15;
+        }
+
+        public void ImprimirCelsius()
+        {
+            Console.WriteLine($"Celsius para Fahrenheit: {fahrenheit}");
+            Console.WriteLine($"Celsius para Kelvin: {kelvin}");
         }
     }
 }
